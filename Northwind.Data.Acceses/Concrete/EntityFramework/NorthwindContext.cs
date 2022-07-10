@@ -4,12 +4,13 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Build.Tasks.Deployment.Bootstrapper;
+using Northwind.Entities.Concrete;
 
-namespace Northwind.Data.Acceses.Concrete
+namespace Northwind.Data.Acceses.Concrete.EntityFremework
 {
     public class NorthwindContext:DbContext
     {
         public DbSet<Product> Products{ get; set; }
+        public DbSet<Category> Categories{ get; set; }
     } 
 }
